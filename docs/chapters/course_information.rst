@@ -5,6 +5,7 @@
 
    course_information/ilos
    course_information/learning_style
+   course_information/materails
 
 
 Course guideance
