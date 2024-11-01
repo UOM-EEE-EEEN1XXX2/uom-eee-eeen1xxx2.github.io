@@ -1,9 +1,18 @@
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+   :maxdepth: 2
+   :caption: Introduction:
    :numbered:
 
    chapters/course_information
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Course information:
+   :numbered:
+
+   course_information/ilos
+   course_information/learning_style
 
 
 Introduction
