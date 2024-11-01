@@ -4,7 +4,6 @@
    :titlesonly:
 
    chapters/course_information
-   chapters/course_guidance
 
 
 
