@@ -1,0 +1,15 @@
+Learning style
+--------------
+Fundamentally, learning programming is a practical exercise - we hope these notes are useful(!), but you need to sit down, type in some code, run it, see what's wrong, and iterate to make it work. We have a large number of lab exercises for the course, and the aim is for you to learn by doing. While it's useful talk over things and explain why some things work and some things don’t, fundamentally you can't learn programming by watching somebody else do it. You need to sit at a computer and type things in. 
+
+The lab exercises aim to provide a safe space for you to explore programming. If taking the course in-person in Manchester, we have a wide number of timetabled lab sessions where graduate teaching assistants will be avaiable to give you help and to give you feedback. For students in Manchester, and taking the course online, we also have an automatic feedback system that will let you upload code for particular tasks and get feedback on what is and isn't working. 
+
+Remember, you can't break the computer. (Or you probably can't!) Everything is also version controlled so you can roll-back to previous versions if you need to. It's fine to experiment, to see what happens when you try different pieces of code, and to use this to help your understanding. Often in programming there's more than one way of accomplishing the same thing, and so you might like to try a couple of different options. 
+
+The structure of the course reflects this practical nature. The pre-recorded videos are deliberately brief, mainly to set the scene for each topic, with there being many resources available online on the general Internet if you want or need more. The main resources we make available to you are the labs, and the demonstrators for answering your questions as you progress through the course. In the lectures we'll focus on looking at examples and answering questions. 
+
+Within each lab, you'll find that the questions start in tutorial style. That is, they'll walk you through step-by-step what to do. The questions will then switch to problem-driven style. That is, you'll be given a problem to solve, and will need to use the C programming you've learnt up to what point to devise a solution. These questions are more open ended and less prescriptive on how you need to tackle them. 
+
+Based on the above, there isn't an office hour scheduled for this course. There is plenty of time in the lab sessions for asking questions. Equally, we won't debug your code by email. This is extremely hard to do! Please bring your code to a lab session, where we can look at the code and any error messages to figure out what's wrong.
+
+Once the exam timetable has been released I'll set a final deadline for any questions. This will avoid people worrying about whether or not a query will be answered before the exam. 
