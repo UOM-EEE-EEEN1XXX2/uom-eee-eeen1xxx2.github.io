@@ -43,7 +43,6 @@ html_theme_options = dict(
         "Canvas|https://online.manchester.ac.uk/",
     ]),
     github_url = "https://github.com/UOM-EEE-EEEN1XXX2/notes-part1/tree/main/docs/",
-    collapse_navigation = False,
 )
 html_favicon = "_static/images/favicon.ico"
 html_show_copyright = True
