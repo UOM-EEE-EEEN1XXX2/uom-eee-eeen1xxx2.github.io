@@ -1,6 +1,5 @@
 .. toctree::
    :maxdepth: 2
-   :caption: Introduction:
    :numbered:
 
    chapters/course_information
@@ -8,14 +7,12 @@
 
 
 
-Introduction
-============
+Course introduction
+===================
 
 Wellcome to EEEN1XXX2 *Introduction to programming and software development*. The course aims to introduce students to programming, using languages such as Python and Rust, to let them automate common computer tasks.
 
 These course notes are split into 3 parts.
-
-`Part 0 (this part) on course adminstration. <https://uom-eee-eeen1xxx2.github.io/>`_
 
 - `Part 0 (this part) on course adminstration. <https://uom-eee-eeen1xxx2.github.io/>`_ These notes provide an overview of the course administration: the intended learning outcomes and other information needed to work through the course. The notes also provides information on how to install a suitable programming environment for using with the course.
 

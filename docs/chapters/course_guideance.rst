@@ -1,7 +1,4 @@
 .. toctree::
-   :maxdepth: 2
-   :caption: Course information:
-   :numbered:
 
    course_information/ilos
    course_information/learning_style
