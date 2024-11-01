@@ -15,7 +15,7 @@ Wellcome to EEEN1XXX2 *Introduction to programming and software development*. Th
 
 These course notes are split into 3 parts.
 
-`a link <http://www.example.com>`_
+`a link <https://uom-eee-eeen1xxx2.github.io/>`_
 
 - `Part 0 (this part) on course adminstration.<https://uom-eee-eeen1xxx2.github.io/>`_ These notes provide an overview of the course administration: the intended learning outcomes and other information needed to work through the course. The notes also provides information on how to install a suitable programming environment for using with the course.
 
