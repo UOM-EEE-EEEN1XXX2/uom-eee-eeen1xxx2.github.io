@@ -1,6 +1,7 @@
 .. toctree::
    :maxdepth: 3
    :numbered:
+   :titlesonly:
 
    chapters/course_information
    chapters/course_guidance

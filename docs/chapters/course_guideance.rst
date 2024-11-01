@@ -1,11 +1,12 @@
-.. toctree::
-   :maxdepth: 3
-   :hidden:
+```{toctree}
+---
+maxdepth: 2
+titlesonly:
+---
+course_information/ilos
+course_information/learning_style
+```
 
-   course_information/ilos
-   course_information/learning_style
-
-
-Course information
-==================
+Course guideance
+================
 This section overviews the structure of the course and general information on how it will run.
