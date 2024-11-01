@@ -1,7 +1,12 @@
-.. toctree::
-  course_information/ilos
-  course_information/learning_style
-  course_information/materails
+```{toctree}
+---
+maxdepth: 2
+---
+course_information/ilos
+course_information/learning_style
+course_information/materails
+```
+
 
 
 Course information
