@@ -20,3 +20,4 @@ The contents of this section are:
 
    chapters/course_information
    chapters/course_guideance
+   chapters/instructor
