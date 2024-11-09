@@ -19,5 +19,5 @@ The contents of this section are:
    :includehidden:
 
    chapters/course_information
-   chapters/course_guideance
+   chapters/course_guidance
    chapters/instructor

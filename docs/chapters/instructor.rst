@@ -12,7 +12,7 @@ Alex Casson is Professor of Biomedical Engineering at the University of Manchest
 - Sensor signal processing and machine learning for power and time constrained motion artefact rich environments.
 - Using bespoke and off-the-shelf wearable devices in a wide range of environments.
 
-Further details on his research are available `on his main research website <https://research.manchester.ac.uk/en/persons/alex.casson>`_. He is currently based in the Royce Institute for Advanced Materials, and has previously been a Fellow of the Turing Institute for Data Science and Artificial Intelligence. 
+Further details on his research are available `on his main research website. <https://research.manchester.ac.uk/en/persons/alex.casson>`_ He is currently based in the Royce Institute for Advanced Materials, and has previously been a Fellow of the Turing Institute for Data Science and Artificial Intelligence. 
 
 At the University of Manchester he has taught on a wide number of undergraduate courses (in addition to this course):
 - Second year: Digital Systems Design II.
