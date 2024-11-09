@@ -15,6 +15,7 @@ Alex Casson is Professor of Biomedical Engineering at the University of Manchest
 Further details on his research are available `on his main research website. <https://research.manchester.ac.uk/en/persons/alex.casson>`_ He is currently based in the Royce Institute for Advanced Materials, and has previously been a Fellow of the Turing Institute for Data Science and Artificial Intelligence. 
 
 At the University of Manchester he has taught on a wide number of undergraduate courses (in addition to this course):
+
 - Second year: Digital Systems Design II.
 - Second year: Signals and Systems.
 - Third year: Individual project.

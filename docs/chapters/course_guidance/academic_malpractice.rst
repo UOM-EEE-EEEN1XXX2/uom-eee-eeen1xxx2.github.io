@@ -11,4 +11,4 @@ For the avoidance of doubt:
 - **All submitted tasks for this course are individual assignments.**
 - **If you use code or libraries from others this must be clearly stated and suitably referenced.**
 - **Use of artificial intelligence for writing your code must be declared and justification for its use given.**
-- **Plagiarism, collusion, or other forms of academic malpractice may be referred for investigation and lead to a mark of 0 being given for that component of the course, or higher sanctions in-line with `University policies. <https://documents.manchester.ac.uk/display.aspx?DocID=2870>`_**
+- **Plagiarism, collusion, or other forms of academic malpractice may be referred for investigation and lead to a mark of 0 being given for that component of the course, or higher sanctions in-line with `University policies. <https://documents.manchester.ac.uk/display.aspx?DocID=2870>`_ **
