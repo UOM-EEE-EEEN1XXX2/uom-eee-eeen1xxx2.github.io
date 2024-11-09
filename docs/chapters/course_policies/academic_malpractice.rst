@@ -1,5 +1,7 @@
 .. _academic_malpractice:
 
+.. _my-reference-label:
+
 Academic malpractice
 --------------------
 Some of the coding tasks we'll look at, particularly early on, are relatively straight forwards and many submitted solutions will inevitably look very similar. We recognise that there are only so many ways of writing something. (Although similar does not mean exactly the same!)

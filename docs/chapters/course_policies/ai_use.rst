@@ -18,4 +18,6 @@ Similar comments apply to the use of artificial intelligence, and features such 
 
 For the avoidance of doubt, see the course's :ref:`statement on academic malpractice. <_academic_malpractice>` See also the `University's guidance on the use of artificial intelligence. <https://documents.manchester.ac.uk/display.aspx?DocID=70286>`_
 
+:ref:`my-reference-label`
+
  
