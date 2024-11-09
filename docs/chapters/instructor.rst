@@ -16,14 +16,14 @@ Further details on his research are available `on his main research website. <ht
 
 At the University of Manchester he has taught on a wide number of undergraduate courses (in addition to this course):
 
+- First year: Small group tutorials.
 - Second year: Digital Systems Design II.
 - Second year: Signals and Systems.
 - Third year: Individual project.
 - Fourth year: Team project.
 - Masters: Digital Control and Systems Identification.
 - Masters: Individual dissertation.
-
-He has also acted as an academic advisor to many students.
+- All years: Academic advisor.
 
 Examples of Professor Casson's work are below. He also has a `Youtube channel <https://www.youtube.com/playlist?list=PLAGY-m4eNA4Y9oPOUptBU1goWgI7SehqM>`_ where you can watch videos describing this work.
 
