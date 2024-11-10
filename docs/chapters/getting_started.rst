@@ -7,3 +7,4 @@ There are a few parts which are common to all of the parts of the course, such a
    :hidden:
 
    getting_started/limitations
+   getting_started/install
