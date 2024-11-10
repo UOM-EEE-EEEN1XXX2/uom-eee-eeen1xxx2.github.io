@@ -17,7 +17,3 @@ Similar comments apply to the use of artificial intelligence, and features such 
 - As noted above, software is usually distributed with a license, specifying particular terms and conditions that have to be met. When using artificial intelligence functions, you need to ensure that the code used for training the intelligence satisfies any requirements present (which is quite hard to do). Otherwise, you can find functions from others leaking into your code, which you don't have a right to use. For a commercial product this could create substantial legal liabilities (if you use other people's work they generally want recognising, and/or paying for it), and as above, it is the programmer, not the artificial intelligence who is responsible. 
 
 For the avoidance of doubt, see the course's :ref:`statement on academic malpractice. <my-reference-label>` See also the `University's guidance on the use of artificial intelligence. <https://documents.manchester.ac.uk/display.aspx?DocID=70286>`_
-
-:ref:`my-reference-label`
-
- 

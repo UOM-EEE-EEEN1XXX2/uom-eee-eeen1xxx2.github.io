@@ -25,8 +25,8 @@ Items 0-9 are covered in these notes. Items 10 and 11 are only covered in the in
 
 
 
-Intended learning outcomes:
---------------------------- 
+Intended learning outcomes
+-------------------------- 
 After successfully completing the course students should be able to:
 
 0. Explain the need for, and importance of, programming, including why higher performance code may be needed and how this can be achieved. This includes an awareness of factors such as sustainability and security which may affect program design and implementation.
