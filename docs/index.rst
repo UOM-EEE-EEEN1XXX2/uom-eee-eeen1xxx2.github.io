@@ -1,7 +1,7 @@
 Course introduction
 ===================
 
-Wellcome to **EEEN1XXX2 Programming and software development**!
+Welcome to **EEEN1XXX2 Programming and software development**!
 
 This is a first year undergraduate course that introduces students to both general purpose programming for task automation and data analysis, mainly using Python, and higher performance programming, mainly using Rust. We also cover software development processes, such as version control, to help students write secure, maintainable code. This includes some of the theory behind how computers operate, in order to know enough to write efficient programs. 
 

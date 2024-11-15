@@ -1,0 +1,6 @@
+sphinx
+sphinx sphinx_rtd_theme
+sphinx-wagtail-theme
+sphinx_copybutton
+sphinx-prompt
+sphinx-notfound-page

@@ -36,4 +36,4 @@ After successfully completing the course students should be able to:
 4. Apply standard programming techniques (e.g. if statements, loops) in different programming languages. 
 5. Test developed software to give evidence that the code is working and is functionally correct. 
 6. Perform data visualization using standard libraries.
-7. Work individually translate a given descriptive problem or algorithm into program code using appropriate programming elements, techniques and data structures.
+7. Work individually to translate a given descriptive problem or algorithm into program code using appropriate programming elements, techniques and data structures.

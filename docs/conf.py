@@ -1,34 +1,26 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
+# General project setup
 project = 'notes-part1'
 copyright = 'Alex Casson. <a class="nav-link text-light" href="https://creativecommons.org/licenses/by/4.0/deed.en">Released under CC-BY 4.0 license.</a>'
 author = 'Alex Casson'
 release = '0.1'
-
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
-extensions = []
-
 templates_path = ['_templates']
 exclude_patterns = []
-
 language = 'en'
 
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+
+# Set extensions
+extensions = [
+    'sphinx-prompt',
+    'sphinx_copybutton',
+    'notfound.extension',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.extlinks',
+    #'sphinx_affiliates', # needs incompatible version of Sphinx. Will re-visit at a later date
+    'sphinx_wagtail_theme'
+]
 
 
-
-extensions.append('sphinx_wagtail_theme')
-#html_theme = 'sphinx_wagtail_theme'
-
+# Theme settings
 html_theme_path = ['./theme']
 html_theme = 'uom_sphinx_wagtail_theme'
 html_static_path = ['_static']
@@ -53,3 +45,14 @@ html_sidebars = {"**": [
     "uom_logo_sidebar.html",
 ]}
 html_show_sphinx = False
+
+
+# Allow cross-references to other Sphinx sites
+intersphinx_mapping = {
+    'part1': ('https://uom-eee-eeen1xxx2.github.io/notes-part1/', None),
+}
+
+
+# All external links are set here to ease checking of whether they are still the correct version
+# (This isn't checking whether the links are valid, other tools do that. This is for updating, say, policy links to this year's version)
+extlinks = {'issue': ('https://github.com/sphinx-doc/sphinx/issues/%s','issue %s')}

@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" data-content_root="../../">
 <head>
     <meta charset="utf-8" />
-        <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
@@ -11,12 +11,13 @@
         <link rel="shortcut icon" href="../../_static/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
       <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css?v=ea6a6c20" />
-      <link rel="stylesheet" type="text/css" href="../../_static/uom_custom.css?v=069a8e4a" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/uom_custom.css?v=ddd92291" />
             <link rel="index" title="Index" href="../../genindex.html" />
             <link rel="search" title="Search" href="../../search.html" />
             <link rel="top" title="notes-part1 0.1 documentation" href="#" />
             <link rel="up" title="1. Course information" href="../course_information.html" />
-            <link rel="next" title="1.4. Learning style" href="learning_style.html" />
+            <link rel="next" title="1.4. Unit delivery plan" href="unit_delivery_plan.html" />
             <link rel="prev" title="1. Course information" href="../course_information.html" />
     </head>
 <body>
@@ -65,10 +66,12 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">1.1. Course aims</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#syllabus">1.2. Syllabus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#intended-learning-outcomes">1.3. Intended learning outcomes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="learning_style.html">1.4. Learning style</a></li>
-<li class="toctree-l2"><a class="reference internal" href="materials.html">1.5. Course materials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="materials.html#assessments">1.6. Assessments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="materials.html#feedback">1.7. Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit_delivery_plan.html">1.4. Unit delivery plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="learning_style.html">1.5. Learning style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="materials.html">1.6. Course materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="materials.html#assessments">1.7. Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="materials.html#feedback">1.8. Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="suggested_reading.html">1.9. Suggested reading</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../course_policies.html">2. Course policies</a><ul>
@@ -76,7 +79,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../course_policies/ai_use.html">2.2. Using Internet resources and Generative Artificial Intelligence</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../instructor.html">3. About the instructor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">3. Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/limitations.html">3.1. Limitations of the course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/install.html">3.2. Getting access to a programming environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started/install/devcontainer.html">3.2.1. Using a devcontainer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started/install/codespaces.html">3.2.2. Use VSCode online with codespaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started/install/computer_cluster.html">3.2.3. Using a cluster computer on the University campus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started/install/personal_device.html">3.2.4. Installing on your personal computer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/style_guide.html">3.3. Code style guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../instructor.html">4. About the instructor</a></li>
 </ul>
 
     </nav>
@@ -165,7 +180,7 @@
 <li><p>Apply standard programming techniques (e.g. if statements, loops) in different programming languages.</p></li>
 <li><p>Test developed software to give evidence that the code is working and is functionally correct.</p></li>
 <li><p>Perform data visualization using standard libraries.</p></li>
-<li><p>Work individually translate a given descriptive problem or algorithm into program code using appropriate programming elements, techniques and data structures.</p></li>
+<li><p>Work individually to translate a given descriptive problem or algorithm into program code using appropriate programming elements, techniques and data structures.</p></li>
 </ol>
 </section>
 
@@ -174,8 +189,8 @@
     <a class="float-left" href="../course_information.html" title="Previous">
         <span aria-hidden="true">←&nbsp;</span><span class="section-number">1. </span>Course information
     </a>
-    <a class="float-right" href="learning_style.html" title="Next">
-        <span class="section-number">1.4. </span>Learning style <span aria-hidden="true">&nbsp;→</span>
+    <a class="float-right" href="unit_delivery_plan.html" title="Next">
+        <span class="section-number">1.4. </span>Unit delivery plan <span aria-hidden="true">&nbsp;→</span>
     </a>
 </nav>
                     </div>
@@ -223,8 +238,10 @@
         </div>
     </footer>
         <script src="../../_static/documentation_options.js?v=2709fde1"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/doctools.js?v=9bcbadda"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
         <script type="text/javascript" src="../../_static/dist/theme.js"></script>
         <script type="text/javascript" src="../../_static/dist/vendor.js"></script>
         <script type="text/javascript" src="../../_static/searchtools.js"></script>
