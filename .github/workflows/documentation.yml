@@ -9,11 +9,11 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-     - name: pwd
-        run: |
-          pwd
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
+      - name: Test
+        run: |
+          pwd
       - name: Install dependencies
         run: |
           python3 -m pip install -r ./requirements.txt
