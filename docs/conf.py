@@ -46,7 +46,7 @@ html_sidebars = {"**": [
 ]}
 html_show_sphinx = False
 
-notfound_urls_prefix = "/uom-eee-eeen1xxx2/"
+notfound_urls_prefix = "/"
 #notfound_template = 'page.html'
 #notfound_context = {
 #    'title':  'Page not A found',
