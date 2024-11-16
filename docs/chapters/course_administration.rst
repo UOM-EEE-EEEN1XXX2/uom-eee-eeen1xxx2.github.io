@@ -1,5 +1,5 @@
-Course information
-==================
+Course administration
+=====================
 This section overviews the adminstration of the course, and gives the formal aims and intendend learning outcomes. It also covers how the course will operate, from the learning style we're aiming for, to how feedback will be provided. 
 
 
