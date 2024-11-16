@@ -15,7 +15,7 @@ If you choose to use different tools, and there are many different ones to choos
 
 Remember that tools are very configurable, with lots of different options and customisations available. Don't worry if your set up looks a bit different to the ones in the screenshots used in the teaching materials, as long as it works!
 
-Whichever method you pick, for the in-person exam you should be familiar with how to :ref:`run VSCode on a University computer. <_computer_cluster>` Make sure you take the time to familiarise yourself with this, even if you do most of your coding on a personal device.
+Whichever method you pick, for the in-person exam you should be familiar with how to :ref:`run VSCode on a University computer. <computer_cluster>` Make sure you take the time to familiarise yourself with this, even if you do most of your coding on a personal device.
 
 The four options for accessing the tools are:
 
@@ -27,4 +27,4 @@ The four options for accessing the tools are:
    install/computer_cluster
    install/personal_device
 
-Our reccomended appraoch is :ref:`to use the devcontainer. <_devcontainer>`
+Our reccomended appraoch is :ref:`to use the devcontainer. <devcontainer>`
