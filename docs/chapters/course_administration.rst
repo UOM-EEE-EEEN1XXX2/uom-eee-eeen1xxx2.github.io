@@ -7,8 +7,8 @@ This section overviews the adminstration of the course, and gives the formal aim
    :maxdepth: 2
    :hidden:
 
-   course_information/ilos
-   course_information/unit_delivery_plan
-   course_information/learning_style 
-   course_information/materials
-   course_information/suggested_reading
+   course_administration/ilos
+   course_administration/unit_delivery_plan
+   course_administration/learning_style 
+   course_administration/materials
+   course_administration/suggested_reading

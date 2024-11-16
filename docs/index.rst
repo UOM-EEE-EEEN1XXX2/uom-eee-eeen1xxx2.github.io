@@ -3,9 +3,13 @@ Course introduction
 
 Welcome to **EEEN1XXX2 Programming and software development**!
 
-This is a first year undergraduate course that introduces students to both general purpose programming for task automation and data analysis, mainly using Python, and higher performance programming, mainly using Rust. We also cover software development processes, such as version control, to help students write secure, maintainable code. This includes some of the theory behind how computers operate, in order to know enough to write efficient programs. 
+This is a first year undergraduate course that introduces students to both general purpose programming for task automation and data analysis, mainly using Python, and higher performance programming, mainly using Rust. We also cover software development processes, such as version control, to help students write secure, maintainable code. 
 
-EEEN1XXX2 is primarily an in-person course, run at the University of Manchester for students in Electrical and Electronic Engineering. Students enrolled at the University will have a number of timetabled lecture sessions to go over the material, and lab sessions to practice coding and get one-on-one help. The course materials are open source, and so also avaiable for others to follow online. If doing the course online, all parts of the course should be avaiable to use, but with less help avaiable.   
+The course includes some of the theory behind how computers operate, both hardware and software. We go far enough into this for understanding parts of our code which are written a particular way, due to how the hardware and software of a computer works. 
+
+EEEN1XXX2 is primarily an in-person course, run at the University of Manchester for students in Electrical and Electronic Engineering. Students enrolled at the University will have a number of timetabled lecture sessions to go over the material, and lab sessions to practice coding and get one-on-one help. 
+
+The course materials are open source, and so also avaiable for others to follow online. If doing the course online, most parts of the course are avaiable to use. Less help is avaiable, and you won't have access to the assessed parts of the course (the in-lab assessments and end of course exam).  
 
 These course notes are your main guide through the course. They are split into 4 parts.
 
@@ -24,7 +28,7 @@ The contents of Part 0 of the notes are:
    :numbered:
    :includehidden:
 
-   chapters/course_information
+   chapters/course_adminstration
    chapters/course_policies
-   chapters/getting_started
+   chapters/useful_information
    chapters/instructor
