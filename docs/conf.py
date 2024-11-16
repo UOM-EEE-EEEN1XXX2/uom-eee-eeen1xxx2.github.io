@@ -46,6 +46,13 @@ html_sidebars = {"**": [
 ]}
 html_show_sphinx = False
 
+notfound_urls_prefix = "/uom-eee-eeen1xxx2/"
+#notfound_template = 'page.html'
+#notfound_context = {
+#    'title':  'Page not A found',
+#    'body': "<h1>Page not found</h1>\n\nWe could not find the content you were looking for.",
+#}
+#notfound_context = '404.rst'
 
 # Allow cross-references to other Sphinx sites
 intersphinx_mapping = {

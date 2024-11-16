@@ -28,7 +28,7 @@ The contents of Part 0 of the notes are:
    :numbered:
    :includehidden:
 
-   chapters/useful_information
+   chapters/course_administration
    chapters/course_policies
    chapters/useful_information
    chapters/instructor

@@ -4,7 +4,7 @@ About the instructor
 .. image:: bio_picture.png
   :width: 400
   :alt: Picture of the instructor
-|
+
 Alex Casson is Professor of Biomedical Engineering at the University of Manchester. He is a specialist in non-invasive bioelectronic interfaces: the design and application of wearable sensors, and skin-conformal flexible sensors, for human body monitoring and data analysis from highly artefact prone naturalistic situations. This work is highly multi-disciplinary, spanning ultra-low power sensing, signal processing and machine learning in power constrained rich environments, and real-time data analysis towards closed loop systems for remote monitoring and digital therapeutics. He has research experience in:
 
 - Manufacturing using 3D printing, screen printing, and inkjet printing.
