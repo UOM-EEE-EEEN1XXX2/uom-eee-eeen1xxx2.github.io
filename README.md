@@ -11,3 +11,10 @@ This work is licensed under a
 
 
 Sphinx theming used a modified version of the [sphinx-wagtail-theme]: https://github.com/wagtail/sphinx-wagtail-theme, which is released, modified, and included here under an MIT license. 
+
+## TODO:
+- 404 page
+- Useful information(?)
+- Docker tagging
+- Affliate search
+- READMEs for repos
