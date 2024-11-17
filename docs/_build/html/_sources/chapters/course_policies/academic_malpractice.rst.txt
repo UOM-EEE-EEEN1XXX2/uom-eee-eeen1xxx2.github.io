@@ -15,4 +15,4 @@ For the avoidance of doubt:
 - **Use of artificial intelligence for writing your code must be declared and justification for its use given.**
 - **Plagiarism, collusion, or other forms of academic malpractice may be referred for investigation and lead to a mark of 0 being given for that component of the course, or higher sanctions** 
 
-Further information on potential sanctions is given in the `University policies. <https://documents.manchester.ac.uk/display.aspx?DocID=2870>`_
+Further information on potential sanctions is given in the :ext_uom_malpractice_policy:`University policies <>`.

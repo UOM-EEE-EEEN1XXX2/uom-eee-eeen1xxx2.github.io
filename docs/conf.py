@@ -56,7 +56,11 @@ intersphinx_mapping = {
     'part1': ('https://uom-eee-eeen1xxx2.github.io/notes-part1/', None),
 }
 
-
 # All external links are set here to ease checking of whether they are still the correct version
-# (This isn't checking whether the links are valid, other tools do that. This is for updating, say, policy links to this year's version)
-extlinks = {'issue': ('https://github.com/sphinx-doc/sphinx/issues/%s','issue %s')}
+# (This isn't checking whether the links are valid, other tools do that. This is for updating, say, policy links to this year's version) 
+# Note all need %s on the end to work with the extension correctly
+# Link is then :ext_uom_ai_policy:`University's guidance on the use of artificial intelligence. <>` Note <> needed
+extlinks = {
+  'ext_uom_ai_policy': ('https://documents.manchester.ac.uk/display.aspx?DocID=70286%s',None),
+  'ext_uom_malpractice_policy': ('https://documents.manchester.ac.uk/display.aspx?DocID=2870%s',None)
+}

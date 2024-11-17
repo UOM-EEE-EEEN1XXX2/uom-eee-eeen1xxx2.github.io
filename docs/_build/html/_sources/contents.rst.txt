@@ -1,6 +1,0 @@
-.. toctree::
-   :maxdepth: 2
-   :numbered:
-
-   chapters/course_information
-   chapters/course_guideance
