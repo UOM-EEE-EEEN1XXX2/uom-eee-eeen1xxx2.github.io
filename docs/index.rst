@@ -21,7 +21,7 @@ These course notes are your main guide through the course. They are split into 4
 
 - `Part 3 on higher performance computing, mainly with Rust <https://uom-eee-eeen1xxx2.github.io/notes-part3/>`_. These cover writing programs that can run more quickly. This may be because we're writing a large program which takes a long time to run, or because we only have limited computing resources avaiable, or some other reason. In general, Python is a great tool for writing programs quickly, but they tend to execute relatively slowly. We thus use other lanugagues when high performance computing starts to become more important. Here we're going to look mainly at a lunage called Rust, but we'll also look briefly at C and C++ as widely used alternatives.
 
-The contents of Part 0 of the notes are:
+The contents of Part 0 of the notes are:1
 
 .. toctree::
    :maxdepth: 2
