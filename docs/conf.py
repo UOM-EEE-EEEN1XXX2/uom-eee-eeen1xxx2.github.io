@@ -1,5 +1,5 @@
 # General project setup
-project = 'notes-part1'
+project = 'notes-part0'
 copyright = 'Alex Casson. <a class="nav-link text-light" href="https://creativecommons.org/licenses/by/4.0/deed.en">Released under CC-BY 4.0 license.</a>'
 author = 'Alex Casson'
 release = '0.1'
@@ -26,7 +26,8 @@ html_theme = 'uom_sphinx_wagtail_theme'
 html_static_path = ['_static']
 html_theme_options = dict(
     project_name = "EEEN1XXX2 course notes",
-    logo = "/images/uom_logo_white.png",
+    searchbox_text = "Search_notes_part 0",
+    logo = "/img/uom_logo_white.png",
     logo_alt = "University of Manchester logo",
     logo_url = "/",
     logo_width = 88,
@@ -34,11 +35,12 @@ html_theme_options = dict(
         "The University of Manchester|https://www.manchester.ac.uk/",
         "Canvas|https://online.manchester.ac.uk/",
     ]),
-    github_url = "https://github.com/UOM-EEE-EEEN1XXX2/notes-part1/tree/main/docs/",
+    github_url = "https://github.com/UOM-EEE-EEEN1XXX2/notes-part0/tree/main/docs/",
 )
-html_favicon = "_static/images/favicon.ico"
+html_favicon = "_static/img/favicon.ico"
 html_show_copyright = True
 html_css_files = ["uom_custom.css"]
+html_js_files = ["uom_custom.js"]
 html_sidebars = {"**": [
     "searchbox.html",
     "globaltoc.html",
@@ -52,9 +54,9 @@ notfound_urls_prefix = "/"
 
 
 # Allow cross-references to other Sphinx sites
-intersphinx_mapping = {
-    'part1': ('https://uom-eee-eeen1xxx2.github.io/notes-part1/', None),
-}
+#intersphinx_mapping = {
+#    'part1': ('https://uom-eee-eeen1xxx2.github.io/notes-part1/', None),
+#}
 
 # All external links are set here to ease checking of whether they are still the correct version
 # (This isn't checking whether the links are valid, other tools do that. This is for updating, say, policy links to this year's version) 
