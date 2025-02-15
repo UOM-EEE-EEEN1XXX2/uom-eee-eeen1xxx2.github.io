@@ -18,3 +18,4 @@ OpenDyslexic font is included from [OpenDyslexic]: https://opendyslexic.org/, wh
 - Docker tagging
 - Affiliate search
 - READMEs for repos
+- Move everything to pyproject.toml. There is now this for local, and requirements.txt for github! Update github action when canS
