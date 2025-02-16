@@ -14,7 +14,7 @@ The unit will cover the following:
 3. General automation of computer tasks (e.g. shell scripting).
 4. Core programming concepts (e.g. variables, if statements, loops; illustrated in Python).
 5. Computer hardware and software concepts for programmers (e.g. memory addressing, heap and stack memory, data types, number formats, ASCII and UFT-8).
-6. Practice using interpreted languages, including using standard packages and performing data visualization (e.g. via Python, Numpy, Scipy, Pandas, Matplotlib).
+6. Practice using interpreted languages, including using standard packages and performing data visualization (e.g. via Python, Numpy, Scipy, Pandas/Polars, Matplotlib).
 7. Practice using compiled high-performance languages (e.g. Rust).
 8. Awareness of other compiled high-performance languages (e.g. C/C++).
 9. Overview of coding for problem solving: common algorithms and high performance computing concepts.
