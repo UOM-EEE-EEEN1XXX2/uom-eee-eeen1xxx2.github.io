@@ -24,7 +24,7 @@ These course notes are your main guide through the course. They are split into 4
 The contents of Part 0 of the notes are:1
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :numbered:
    :includehidden:
 
