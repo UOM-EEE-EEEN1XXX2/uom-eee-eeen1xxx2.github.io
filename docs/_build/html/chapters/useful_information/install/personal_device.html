@@ -10,6 +10,7 @@
     
     <link rel="stylesheet" type="text/css" href="../../../_static/dist/fontawesome.css" />
       <link rel="stylesheet" type="text/css" href="../../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/uom_custom.css?v=c4fbeeee" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
             <link rel="index" title="Index" href="../../../genindex.html" />
             <link rel="search" title="Search" href="../../../search.html" />
@@ -28,7 +29,7 @@
                         title="University of Manchester logo"
                         class="logo navbar-brand"
                     >
-                        <img src="../../../_static//img/uom_logo_white.png" width="88" height="59" alt="University of Manchester logo"
+                        <img src="../../../_static/./img/uom_logo_white.png" width="88" alt="University of Manchester logo"
                             class="logo-img"
                         />
                         EEEN1XXX2 course notes
@@ -52,7 +53,7 @@
             <div class="input-group-prepend">
                 <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
             </div>
-            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search notes part 0" aria-label="Search notes" id="searchinput" />
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
         </div>
         <input type="hidden" name="check_keywords" value="yes" />
         <input type="hidden" name="area" value="default" />
@@ -99,6 +100,10 @@
             <span class="sr-only">Toggle menu contents</span>
         </button>
     </template>
+</div><div>
+  <p>
+    <img src="https://assets.manchester.ac.uk/logos/hi-res/TAB_UNI_MAIN_logo/White_backgrounds/TAB_col_white_background.png" alt="University of Manchester logo" style="width: 100vw; min-width: 100px;">
+  </p>
 </div>
                     <div class="d-lg-none border-bottom">
                         
@@ -110,7 +115,7 @@
                     <div class="col">
                         <nav aria-label="breadcrumb">
     <ol class="breadcrumb m-0 p-0 bg-transparent">
-        <li class="breadcrumb-item"><a href="../../../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="../../../index.html">Docs</a></li>
             <li class="breadcrumb-item"><a href="../../useful_information.html"><span class="section-number">3. </span>Useful information</a></li>
             <li class="breadcrumb-item"><a href="../install.html"><span class="section-number">3.2. </span>Getting access to a programming environment</a></li>
         <li class="breadcrumb-item active" aria-current="page"><span class="section-number">3.2.4. </span>Installing on your personal computer</li>
@@ -172,12 +177,13 @@ You follow these. Our briefer guide is here, below. Steps should be carried out 
 <ol class="arabic simple">
 <li><p>Install VSCode:</p></li>
 </ol>
-<ul class="simple">
+<ul>
 <li><p>Windows: Download the Windows installer at <a class="reference external" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a> and run it.</p></li>
 <li><p>macOS: Download the macOS installer at <a class="reference external" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a> and run it.</p></li>
-<li><p>Linux: Assuming you are on a Debian based distribution such as Ubuntu, run:
-% sudo apt-get update &amp;&amp; apt-get -y snapd
-% sudo snap install code –classic</p></li>
+<li><p>Linux: Assuming you are on a Debian based distribution such as Ubuntu, run:</p>
+<p>% sudo apt-get update &amp;&amp; apt-get -y snapd
+% sudo snap install code –classic</p>
+</li>
 </ul>
 <ol class="arabic simple" start="2">
 <li><p>Install gcc:</p></li>
@@ -246,11 +252,11 @@ $ pacman -S mingw-w64-ucrt-x86_64-gcc</p></li>
 <li><p>macOS:</p></li>
 </ul>
 <blockquote>
-<div><ul class="simple">
-<li><dl class="simple">
-<dt>In the terminal, run the command:</dt><dd><p>% brew install git</p>
-</dd>
-</dl>
+<div><ul>
+<li><p>In the terminal, run the command:</p>
+<blockquote>
+<div><p>% brew install git</p>
+</div></blockquote>
 </li>
 <li><p>(The above assumes homebrew was installed in Step 2. Full instructions are at <a class="reference external" href="https://git-scm.com/download/mac">https://git-scm.com/download/mac</a> if needed.)</p></li>
 <li><p>When prompted, select Visual Studio Code as the default editor.</p></li>
@@ -261,11 +267,11 @@ $ pacman -S mingw-w64-ucrt-x86_64-gcc</p></li>
 <li><p>Linux:</p></li>
 </ul>
 <blockquote>
-<div><ul class="simple">
-<li><dl class="simple">
-<dt>In the terminal, run the command:</dt><dd><p>% sudo apt-get update &amp;&amp; apt-get -y git-all</p>
-</dd>
-</dl>
+<div><ul>
+<li><p>In the terminal, run the command:</p>
+<blockquote>
+<div><p>% sudo apt-get update &amp;&amp; apt-get -y git-all</p>
+</div></blockquote>
 </li>
 </ul>
 </div></blockquote>
@@ -361,6 +367,7 @@ $ pacman -S mingw-w64-ucrt-x86_64-gcc</p></li>
         <script src="../../../_static/copybutton.js?v=f281be69"></script>
         <script type="text/javascript" src="../../../_static/dist/theme.js"></script>
         <script type="text/javascript" src="../../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../../_static/uom_custom.js"></script>
         <script type="text/javascript" src="../../../_static/searchtools.js"></script>
         <script type="text/javascript" src="../../../_static/language_data.js"></script>
         <script type="text/javascript">

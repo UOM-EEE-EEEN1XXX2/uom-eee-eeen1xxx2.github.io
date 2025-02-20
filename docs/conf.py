@@ -27,7 +27,6 @@ html_static_path = ['_static']
 html_theme_options = dict(
     project_name = "EEEN1XXX2 course notes",
     searchbox_text = "Search notes part 0",
-    logo = "/img/uom_logo_white.png",
     logo_alt = "University of Manchester logo",
     logo_url = "/",
     logo_width = 88,
@@ -37,10 +36,7 @@ html_theme_options = dict(
     ]),
     github_url = "https://github.com/UOM-EEE-EEEN1XXX2/uom-eee-eeen1xxx2.github.io/tree/main/docs/",
 )
-html_favicon = "/img/favicon.ico"
 html_show_copyright = True
-#html_css_files = ["uom_custom.css"]
-#html_js_files = ["uom_custom.js"]
 html_show_sphinx = False
 
 

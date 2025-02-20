@@ -28,12 +28,14 @@ You follow these. Our briefer guide is here, below. Steps should be carried out 
 - Windows: Download the Windows installer at https://code.visualstudio.com/ and run it.
 - macOS: Download the macOS installer at https://code.visualstudio.com/ and run it.
 - Linux: Assuming you are on a Debian based distribution such as Ubuntu, run:
+
   % sudo apt-get update && apt-get -y snapd 
   % sudo snap install code --classic
 
 2. Install gcc:
 
 - Windows:
+
  - Download the MSYS2 installer at https://www.msys2.org/ and run it.
  - Make a note of the installation folder. (Any folder is fine, you just need to note it.) We suggest you keep it at the default. Typically it is
    C:\msys64
@@ -48,6 +50,7 @@ You follow these. Our briefer guide is here, below. Steps should be carried out 
    C:\msys64\ucrt64\bin
 
 - macOS:
+
  - Open the "Terminal" application.
  - Enter the command below (the % isn't needed, this is to show you where to enter the command):
    
@@ -62,6 +65,7 @@ You follow these. Our briefer guide is here, below. Steps should be carried out 
    % brew install gcc
 
 - Linux:
+
  - Open the "Terminal" application.
  - Run:
    
@@ -70,19 +74,27 @@ You follow these. Our briefer guide is here, below. Steps should be carried out 
 3. Install git:
 
 - Windows:
+
  - Download the Windows installer at https://git-scm.com/download/win and run it. Select the "Standalone Installer", "64-bit Git for Windows Setup".
  - The default settings are fine, expect for "Choosing the default editor used by Git". Select Visual Studio Code for this.
 		
 				
  - Optional: You may also like to install GitHub Desktop. Download at https://desktop.github.com/. It gives a slightly nicer interface to Git and GitHub than the default VSCode interface.
+
 - macOS:
+
  - In the terminal, run the command:
+
 			% brew install git
+
  - (The above assumes homebrew was installed in Step 2. Full instructions are at https://git-scm.com/download/mac if needed.)
  - When prompted, select Visual Studio Code as the default editor.
  - Optional: You may also like to install GitHub Desktop. Download at https://desktop.github.com/. It gives a slightly nicer interface to Git and GitHub than the default VSCode interface.
+
 - Linux:
+
  - In the terminal, run the command:
+
 			% sudo apt-get update && apt-get -y git-all
 
 4. Install VSCode extensions:
@@ -90,7 +102,9 @@ You follow these. Our briefer guide is here, below. Steps should be carried out 
 - VSCode comes with a number of Extensions. These are installed from within VSCode  by clicking the Extensions button. 		
 
 - All platforms:
+
  - Open the Extensions pane. Search for and install each of the below:
+
   - ms-vscode.cpptools
   - ms-vscode.cpptools-extension-pack
   - ms-vscode.cpptools-themes
