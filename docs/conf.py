@@ -37,15 +37,10 @@ html_theme_options = dict(
     ]),
     github_url = "https://github.com/UOM-EEE-EEEN1XXX2/uom-eee-eeen1xxx2.github.io/tree/main/docs/",
 )
-html_favicon = "_static/img/favicon.ico"
+html_favicon = "/img/favicon.ico"
 html_show_copyright = True
-html_css_files = ["uom_custom.css"]
-html_js_files = ["uom_custom.js"]
-html_sidebars = {"**": [
-    "searchbox.html",
-    "globaltoc.html",
-    "uom_logo_sidebar.html",
-]}
+#html_css_files = ["uom_custom.css"]
+#html_js_files = ["uom_custom.js"]
 html_show_sphinx = False
 
 
