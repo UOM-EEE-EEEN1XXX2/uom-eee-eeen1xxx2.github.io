@@ -19,6 +19,16 @@
     </head>
 <body>
     <script type="text/javascript" src="_static/dist/blocking.js"></script>
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script>
+        try {
+            var font_store = localStorage.getItem('uom-sphinx-font');
+
+            if (font_store.startsWith('"') && font_store.endsWith('"')) {
+                localStorage.setItem('uom-sphinx-font', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>    
     <!-- Set the theme before any content is loaded, prevents flash -->
     <script>
         var html = document.querySelector('html');
@@ -172,7 +182,7 @@
 <li><p><a class="reference external" href="https://uom-eee-eeen1xxx2.github.io/notes-part2/">Part 2 on general purpose computing, mainly with Python</a>. These cover automating tasks on a computer, and using programming to analyze and explore and visualize data. We’ll mainly use Python for this, as a very widely used programming language, but will also look briefly at <em>Shell Scripting</em> as as a method built in to most operating systems.</p></li>
 <li><p><a class="reference external" href="https://uom-eee-eeen1xxx2.github.io/notes-part3/">Part 3 on higher performance computing, mainly with Rust</a>. These cover writing programs that can run more quickly. This may be because we’re writing a large program which takes a long time to run, or because we only have limited computing resources available, or some other reason. In general, Python is a great tool for writing programs quickly, but they tend to execute relatively slowly. We thus use other languages when high performance computing starts to become more important. Here we’re going to look mainly at a language called Rust, but we’ll also look briefly at C and C++ as widely used alternatives.</p></li>
 </ul>
-<p>The contents of Part 0 of the notes are:1</p>
+<p>The contents of Part 0 of the notes are:2</p>
 <div class="toctree-wrapper compound">
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">0. Introduction</a></li>

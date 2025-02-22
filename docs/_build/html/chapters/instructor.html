@@ -19,6 +19,16 @@
     </head>
 <body>
     <script type="text/javascript" src="../_static/dist/blocking.js"></script>
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script>
+        try {
+            var font_store = localStorage.getItem('uom-sphinx-font');
+
+            if (font_store.startsWith('"') && font_store.endsWith('"')) {
+                localStorage.setItem('uom-sphinx-font', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>    
     <!-- Set the theme before any content is loaded, prevents flash -->
     <script>
         var html = document.querySelector('html');
