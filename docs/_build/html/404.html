@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" type="text/css" href="/_static/dist/fontawesome.css" />
       <link rel="stylesheet" type="text/css" href="/_static/dist/theme.css?v=310cf088" />
-      <link rel="stylesheet" type="text/css" href="/_static/uom_custom.css?v=c4fbeeee" />
+      <link rel="stylesheet" type="text/css" href="/_static/uom_custom.css?v=0d69fc1f" />
       <link rel="stylesheet" type="text/css" href="/_static/copybutton.css?v=76b2166b" />
             <link rel="index" title="Index" href="/genindex.html" />
             <link rel="search" title="Search" href="/search.html" />
@@ -18,6 +18,15 @@
     </head>
 <body>
     <script type="text/javascript" src="/_static/dist/blocking.js"></script>
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script>
+        var html = document.querySelector('html');
+        var font;
+        try { font = localStorage.getItem('uom-sphinx-font'); } catch(e) { }
+        if (font === null || font === undefined) { font = "font-roboto"; }
+        html.classList.remove("font-roboto");
+        html.classList.add(font);
+    </script>
     <header id="uom_header_title" class="container-fluid bg-primary">
         <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
         <div class="container-fluid">
@@ -126,8 +135,8 @@
                             <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
                         </button>
                         <button id="uom_alt_font_button" class="btn btn-sm btn-light text-decoration-none" type="button">
-                            <span id="default-font"><i class="fas fa-strikethrough"></i> Default font</span>
-                            <span id="alt-font"><i class="fas fa-font"></i> OpenDyslexic font</span>
+                            <span class="font-button font-roboto"><i class="fas fa-strikethrough"></i> Default font</span>
+                            <span class="font-button font-opendyslexic"><i class="fas fa-font"></i> OpenDyslexic font</span>
                         </button>
     <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/UOM-EEE-EEEN1XXX2/uom-eee-eeen1xxx2.github.io/tree/main/docs/404.rst" rel="nofollow">
         <span class="btn-icon"><span class="fab fa-github"></span></span>

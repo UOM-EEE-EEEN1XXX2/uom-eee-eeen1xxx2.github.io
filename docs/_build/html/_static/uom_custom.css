@@ -35,40 +35,16 @@
 
 :root {
     --uom-purple: #660099;
-    --uom-font: "Roboto", sans-serif;
-    --uom-font-alt: OpenDyslexic;
 }
 
 
-header {
-    font-family: var(--uom-font);
+html.font-roboto {
+    font-family: "Roboto", sans-serif;
 }
 
-
-header.alt-font{
-    font-family: var(--uom-font-alt);
+html.font-opendyslexic {
+    font-family: OpenDyslexic, sans-serif;
 }
-
-
-body {
-    font-family: var(--uom-font);
-}
-
-
-body.alt-font{
-    font-family: var(--uom-font-alt);
-}
-
-
-footer {
-    font-family: var(--uom-font);
-}
-
-
-footer.alt-font{
-    font-family: var(--uom-font-alt);
-}
-
 
 
 p{
@@ -104,10 +80,14 @@ a:hover {
   color: #6c6c6c !important;
 }
 
-.alt-font-nodisplay{
+.font-button{
   display: none;
 }
 
-.alt-font-display{
-  display: inline-block;
-}
+.font-roboto{
+    display: inline-block;
+  }
+  
+.font-opendyslexic{
+    display: inline-block;
+  }

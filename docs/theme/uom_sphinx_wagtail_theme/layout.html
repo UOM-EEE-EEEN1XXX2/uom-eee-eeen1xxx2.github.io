@@ -71,6 +71,15 @@
 </head>
 <body>
     <script type="text/javascript" src="{{ pathto('_static/dist/blocking.js', 1) }}"></script>
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script>
+        var html = document.querySelector('html');
+        var font;
+        try { font = localStorage.getItem('uom-sphinx-font'); } catch(e) { }
+        if (font === null || font === undefined) { font = "font-roboto"; }
+        html.classList.remove("font-roboto");
+        html.classList.add(font);
+    </script>
     <header id="uom_header_title" class="container-fluid bg-primary">
         <a class="btn btn-sm btn-light skip-to-content-link" href="#main">{{ _('Skip to content') }}</a>
         <div class="container-fluid">
@@ -134,8 +143,8 @@
                             <span class="light-only"><i class="fas fa-moon"></i> {{ _('Dark mode') }}</span>
                         </button>
                         <button id="uom_alt_font_button" class="btn btn-sm btn-light text-decoration-none" type="button">
-                            <span id="default-font"><i class="fas fa-strikethrough"></i>{{ _(' Default font') }}</span>
-                            <span id="alt-font"><i class="fas fa-font"></i>{{ _(' OpenDyslexic font') }}</span>
+                            <span class="font-button font-roboto"><i class="fas fa-strikethrough"></i>{{ _(' Default font') }}</span>
+                            <span class="font-button font-opendyslexic"><i class="fas fa-font"></i>{{ _(' OpenDyslexic font') }}</span>
                         </button>
                         {%- if pagename != "search" -%}
                         {% include "source-buttons.html" %}
