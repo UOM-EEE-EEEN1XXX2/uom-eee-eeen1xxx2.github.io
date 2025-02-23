@@ -5,7 +5,7 @@ author = 'Alex Casson'
 release = '0.1'
 templates_path = ['_templates']
 exclude_patterns = []
-language = 'en'
+language = 'en_GB'
 
 
 # Set extensions
@@ -27,6 +27,7 @@ html_static_path = ['_static']
 html_theme_options = dict(
     project_name = "EEEN1XXX2 course notes",
     searchbox_text = "Search notes part 0",
+    breadcrumb_home = "Home",
     logo_alt = "University of Manchester logo",
     logo_url = "/",
     logo_width = 88,
@@ -38,6 +39,7 @@ html_theme_options = dict(
 )
 html_show_copyright = True
 html_show_sphinx = False
+pygments_style = 'bw'
 
 
 # 404 settings - note this won't display correctly locally, but will on github

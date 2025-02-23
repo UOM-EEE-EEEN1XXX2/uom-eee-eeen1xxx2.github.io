@@ -33,17 +33,49 @@
 }
 
 
+@font-face { 
+  font-family: "OpenDyslexicMono";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/OpenDyslexicMono-Regular.otf") format('opentype');
+}
+
+
 :root {
     --uom-purple: #660099;
+    --uom-font: "Roboto", sans-serif;
+    --uom-font-alt: OpenDyslexic;
+    --uom-font-alt-mono: OpenDyslexicMono;
 }
 
 
-html.font-roboto {
-    font-family: "Roboto", sans-serif;
+header.font-roboto {
+  font-family: var(--uom-font);
 }
 
-html.font-opendyslexic {
-    font-family: OpenDyslexic, sans-serif;
+
+header.font-opendyslexic {
+  font-family: var(--uom-font-alt);
+}
+
+
+body.font-roboto {
+  font-family: var(--uom-font);
+}
+
+
+body.font-opendyslexic {
+  font-family: var(--uom-font-alt);
+}
+
+
+footer.font-roboto {
+  font-family: var(--uom-font);
+}
+
+
+footer.font-opendyslexic {
+  font-family: var(--uom-font-alt);
 }
 
 
@@ -80,14 +112,23 @@ a:hover {
   color: #6c6c6c !important;
 }
 
-.font-button{
+span.font-roboto{
+    display: none;
+  }
+
+  
+span.font-opendyslexic{
+    display: inline-block;
+}
+
+.default-only{
   display: none;
 }
 
-.font-roboto{
-    display: inline-block;
-  }
-  
-.font-opendyslexic{
-    display: inline-block;
-  }
+.alt-only{
+  display: none;
+}
+
+pre.font-opendyslexic{
+  font-family: var(--uom-font-alt-mono);
+}

@@ -71,15 +71,26 @@
 </head>
 <body>
     <script type="text/javascript" src="{{ pathto('_static/dist/blocking.js', 1) }}"></script>
-    <!-- Set the theme before any content is loaded, prevents flash -->
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script>
+        try {
+            var font_store = localStorage.getItem('uom-sphinx-font');
+
+            if (font_store.startsWith('"') && font_store.endsWith('"')) {
+                localStorage.setItem('uom-sphinx-font', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>   
+    <!-- Set font before content loads to prevent a flash --> 
     <script>
         var html = document.querySelector('html');
+        var body   = document.querySelector('body');
         var font;
         try { font = localStorage.getItem('uom-sphinx-font'); } catch(e) { }
         if (font === null || font === undefined) { font = "font-roboto"; }
-        html.classList.remove("font-roboto");
         html.classList.add(font);
-    </script>
+        body.classList.add(font);
+        </script>
     <header id="uom_header_title" class="container-fluid bg-primary">
         <a class="btn btn-sm btn-light skip-to-content-link" href="#main">{{ _('Skip to content') }}</a>
         <div class="container-fluid">
@@ -143,8 +154,8 @@
                             <span class="light-only"><i class="fas fa-moon"></i> {{ _('Dark mode') }}</span>
                         </button>
                         <button id="uom_alt_font_button" class="btn btn-sm btn-light text-decoration-none" type="button">
-                            <span class="font-button font-roboto"><i class="fas fa-strikethrough"></i>{{ _(' Default font') }}</span>
-                            <span class="font-button font-opendyslexic"><i class="fas fa-font"></i>{{ _(' OpenDyslexic font') }}</span>
+                            <span id="span_uom_alt_font_button1" class="default-only"><i class="fas fa-strikethrough"></i>{{ _(' Default font') }}</span>
+                            <span id="span_uom_alt_font_button2" class="alt-only"><i class="fas fa-font"></i>{{ _(' OpenDyslexic font') }}</span>
                         </button>
                         {%- if pagename != "search" -%}
                         {% include "source-buttons.html" %}
@@ -181,7 +192,6 @@
             {% include "footer.html" %}
         </div>
     </footer>
-
     {%- if not embedded %}
         {#- Sphinx >=1.8.0 has this as an external js file. Sphinx 4.0 includes in in script_files #}
         {%- if sphinx_version_info[0] < 4 %}
