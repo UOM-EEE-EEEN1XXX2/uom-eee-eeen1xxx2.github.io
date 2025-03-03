@@ -1,0 +1,80 @@
+.. _devcontainer:
+
+Using a devcontainer
+--------------------
+
+This is our reccomended method.
+
+Advantages and disadvantages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Advantages:
+
+- Runs locally on your computer. You can thus do coding at home and remotely, at times convenient for you.
+- The dev container hosts the main tools, so you get the correct version of everything, correctly set up. 
+
+Disadvantages:
+
+- Requires admin permissions on your device.
+- Still requires installing quite a few things, which needs to be done correctly for it to work. 
+- Installs another operating system in the background, and so may need quite a bit of disk space
+- Uses Docker, which can take quite a lot of computer resources. (It can drain the battery fairly quickly.) It is recommended that you don't allow Docker to start with the computer, but start it by hand only when needed. 
+- Regardless of what your main operating system is, your programming is actually done in Linux.
+- VSCode takes a relatively long time to complete its set up each time you start it (typically about a minute).
+
+
+Process
+~~~~~~~
+1. Install VSCode:
+
+- Windows: Download the Windows installer at https://code.visualstudio.com/ and run it.
+- macOS: Download the macOS installer at https://code.visualstudio.com/ and run it.
+- Linux: Assuming you are on a Debian based distribution such as Ubuntu, run:
+  % sudo apt-get update && apt-get -y snap 
+  % sudo snap install code --classic
+		
+2. Install Windows Subsystem for Linux version 2 (WSLv2):
+
+- Windows:
+
+ - Open PowerShell as an administrator. That is, search for "PowerShell" in the start menu, right click on "Windows Powershell", and select "Run as administrator".
+ - At the command prompt that is displayed, enter the command below. (The > isn't entered by you, it's to show you where to enter commands).
+
+   > wsl --install
+
+- macOS: This step isn't needed.
+- Linux: This step isn't needed.
+
+3. Install Docker and Docker Desktop. 
+
+- Windows: Download the Windows installer at https://www.docker.com/products/docker-desktop/ and run it. 
+
+ - When prompted, select "WSL 2" during the installation. 
+ - macOS: Windows: Download the macOS installer at https://www.docker.com/products/docker-desktop/ and run it. 
+ - Linux: Follow the instructions at https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository to enter the commands below in the terminal:
+
+   % sudo apt-get update
+   % sudo apt-get install ca-certificates curl
+   % sudo install -m 0755 -d /etc/apt/keyrings
+   % sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   % sudo chmod a+r /etc/apt/keyrings/docker.asc
+   % echo \
+   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   % sudo apt-get update
+   % sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+	
+4. Copy dev container files
+
+- We have made a dev container (see https://code.visualstudio.com/docs/devcontainers/containers) for the course which contains the required tools. The dev container files are online at: https://github.com/EEEN10242/devcontainer
+- To develop your code in a dev container these files should be downloaded and put into the folder your code is in. 
+- You will need to repeat this step every time you start a new lab or project folder. 
+- You can ignore "example.c". This is some example code that you can compile, if you want, to check that the setup is working. All of the other files are needed for the set up to work correctly. 
+
+5. Using the dev container
+
+- When you start VSCode and select "Open Folder…" it will automatically detect the dev container files and install/set up the required tools. 
+- It may ask you explicitly whether you want to use a container or not. If so, you should select "Reopen in Container".
+- Alternatively, rather than selecting "Open Folder…" you can click on the green arrow button in the bottom left of the VSCode window, and select "Open Folder in Container…"
+- When successful, using either approach, the green arrow button in the bottom left should change to show that you are connected to a dev container.
