@@ -88,8 +88,13 @@
         var font;
         try { font = localStorage.getItem('uom-sphinx-font'); } catch(e) { }
         if (font === null || font === undefined) { font = "font-roboto"; }
-        html.classList.add(font);
-        body.classList.add(font);
+        if (font === "font-opendyslexic") {
+            html.classList.remove('font-alt');
+            body.classList.remove('font-alt');
+        } else {
+            html.classList.add('font-alt');
+            body.classList.add('font-alt');
+        }
         </script>
     <header id="uom_header_title" class="container-fluid bg-primary">
         <a class="btn btn-sm btn-light skip-to-content-link" href="#main">{{ _('Skip to content') }}</a>
@@ -154,8 +159,8 @@
                             <span class="light-only"><i class="fas fa-moon"></i> {{ _('Dark mode') }}</span>
                         </button>
                         <button id="uom_alt_font_button" class="btn btn-sm btn-light text-decoration-none" type="button">
-                            <span id="span_uom_alt_font_button1" class="default-only"><i class="fas fa-strikethrough"></i>{{ _(' Default font') }}</span>
-                            <span id="span_uom_alt_font_button2" class="alt-only"><i class="fas fa-font"></i>{{ _(' OpenDyslexic font') }}</span>
+                            <span class="alt-only"><i class="fas fa-strikethrough"></i>{{ _(' Default font') }}</span>
+                            <span class="default-only"><i class="fas fa-font"></i>{{ _(' OpenDyslexic font') }}</span>
                         </button>
                         {%- if pagename != "search" -%}
                         {% include "source-buttons.html" %}

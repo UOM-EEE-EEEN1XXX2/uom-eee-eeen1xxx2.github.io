@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" type="text/css" href="_static/dist/fontawesome.css" />
       <link rel="stylesheet" type="text/css" href="_static/dist/theme.css?v=310cf088" />
-      <link rel="stylesheet" type="text/css" href="_static/uom_custom.css?v=b1e2257f" />
+      <link rel="stylesheet" type="text/css" href="_static/uom_custom.css?v=6d64e554" />
       <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
             <link rel="index" title="Index" href="genindex.html" />
             <link rel="search" title="Search" href="search.html" />
@@ -36,8 +36,13 @@
         var font;
         try { font = localStorage.getItem('uom-sphinx-font'); } catch(e) { }
         if (font === null || font === undefined) { font = "font-roboto"; }
-        html.classList.add(font);
-        body.classList.add(font);
+        if (font === "font-opendyslexic") {
+            html.classList.remove('font-alt');
+            body.classList.remove('font-alt');
+        } else {
+            html.classList.add('font-alt');
+            body.classList.add('font-alt');
+        }
         </script>
     <header id="uom_header_title" class="container-fluid bg-primary">
         <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
@@ -147,8 +152,8 @@
                             <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
                         </button>
                         <button id="uom_alt_font_button" class="btn btn-sm btn-light text-decoration-none" type="button">
-                            <span id="span_uom_alt_font_button1" class="default-only"><i class="fas fa-strikethrough"></i> Default font</span>
-                            <span id="span_uom_alt_font_button2" class="alt-only"><i class="fas fa-font"></i> OpenDyslexic font</span>
+                            <span class="alt-only"><i class="fas fa-strikethrough"></i> Default font</span>
+                            <span class="default-only"><i class="fas fa-font"></i> OpenDyslexic font</span>
                         </button>
     <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/UOM-EEE-EEEN1XXX2/uom-eee-eeen1xxx2.github.io/tree/main/docs/index.rst" rel="nofollow">
         <span class="btn-icon"><span class="fab fa-github"></span></span>
@@ -183,9 +188,17 @@
 <li><p><a class="reference external" href="https://uom-eee-eeen1xxx2.github.io/notes-part2/">Part 2 on general purpose computing, mainly with Python</a>. These cover automating tasks on a computer, and using programming to analyze and explore and visualize data. We’ll mainly use Python for this, as a very widely used programming language, but will also look briefly at <em>Shell Scripting</em> as as a method built in to most operating systems.</p></li>
 <li><p><a class="reference external" href="https://uom-eee-eeen1xxx2.github.io/notes-part3/">Part 3 on higher performance computing, mainly with Rust</a>. These cover writing programs that can run more quickly. This may be because we’re writing a large program which takes a long time to run, or because we only have limited computing resources available, or some other reason. In general, Python is a great tool for writing programs quickly, but they tend to execute relatively slowly. We thus use other languages when high performance computing starts to become more important. Here we’re going to look mainly at a language called Rust, but we’ll also look briefly at C and C++ as widely used alternatives.</p></li>
 </ul>
-<p>The below is a test. Delete.123456</p>
+<p>The below is a test.1</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">lumache.py</span><a class="headerlink" href="#id1" title="Link to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_random_ingredients</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="hll">    <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;shells&quot;</span><span class="p">,</span> <span class="s2">&quot;gorgonzola&quot;</span><span class="p">,</span> <span class="s2">&quot;parsley&quot;</span><span class="p">]</span>
+</span></pre></div>
+</div>
+</div>
+<p>This in incline code <code class="docutils literal notranslate"><span class="pre">print</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">lumache.py</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_random_ingredients</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="hll">    <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;shells&quot;</span><span class="p">,</span> <span class="s2">&quot;gorgonzola&quot;</span><span class="p">,</span> <span class="s2">&quot;parsley&quot;</span><span class="p">]</span>
 </span></pre></div>

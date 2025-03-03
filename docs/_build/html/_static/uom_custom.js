@@ -1,10 +1,6 @@
 (function fonts() {
     var header = document.querySelector('header');
     var body   = document.querySelector('body');
-    var footer = document.querySelector('footer');
-    var pre = document.querySelector('pre');
-    var font_btn1 = document.getElementById("span_uom_alt_font_button1");
-    var font_btn2 = document.getElementById("span_uom_alt_font_button2");
     var fontToggleButton = document.getElementById('uom_alt_font_button');
 
         function get_font() {
@@ -25,18 +21,13 @@
                 font = "font-roboto";
             }
 
-            header.classList.remove(previousFont);
-            header.classList.add(font);
-            body.classList.remove(previousFont);
-            body.classList.add(font);
-            footer.classList.remove(previousFont);
-            footer.classList.add(font);
-            font_btn1.classList.remove(previousFont);
-            font_btn1.classList.add(font);
-            font_btn2.classList.remove(font);
-            font_btn2.classList.add(previousFont);
-            pre.classList.remove(previousFont);
-            pre.classList.add(font);
+            if (font === "font-opendyslexic") {
+                html.classList.remove('font-alt');
+                body.classList.remove('font-alt');
+            } else {
+                html.classList.add('font-alt');
+                body.classList.add('font-alt');
+            }
 
             if (!store) { // seems to be the wrong way round! Not clear why this is
                 try { localStorage.setItem('uom-sphinx-font', font); } catch (e) { }

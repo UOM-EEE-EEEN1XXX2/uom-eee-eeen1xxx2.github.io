@@ -48,35 +48,40 @@
     --uom-font-alt-mono: OpenDyslexicMono;
 }
 
-
-header.font-roboto {
+html{
   font-family: var(--uom-font);
 }
 
-
-header.font-opendyslexic {
+html.font-alt {
   font-family: var(--uom-font-alt);
 }
 
-
-body.font-roboto {
+body{
   font-family: var(--uom-font);
 }
 
-
-body.font-opendyslexic {
+body.font-alt {
   font-family: var(--uom-font-alt);
 }
-
-
-footer.font-roboto {
-  font-family: var(--uom-font);
+body.font-alt .default-only{
+  display:none;
 }
 
-
-footer.font-opendyslexic {
-  font-family: var(--uom-font-alt);
+body.font-alt .alt-only{
+  display:inline-block;
 }
+
+.default-only{
+  display:inline-block;
+}
+
+.alt-only{
+  display:none;
+}
+
+.font-alt pre,.pre{
+  font-family: var(--uom-font-alt-mono);
+};
 
 
 p{
@@ -110,25 +115,4 @@ a:hover {
 
 .navbar-brand:hover{
   color: #6c6c6c !important;
-}
-
-span.font-roboto{
-    display: none;
-  }
-
-  
-span.font-opendyslexic{
-    display: inline-block;
-}
-
-.default-only{
-  display: none;
-}
-
-.alt-only{
-  display: none;
-}
-
-pre.font-opendyslexic{
-  font-family: var(--uom-font-alt-mono);
 }
