@@ -17,8 +17,29 @@ ADD MONO
 pygmentize -S default -f html -a .highlight > pygments.css
 pygmentize -S monokai -f html -a .highlight > pygments-theme-dark.css
 
-a11y-high-contrast-light
-a11y-high-contrast-dark
+The below is a test.
+
+.. code-block:: python
+   :caption: lumache.py
+   :emphasize-lines: 2
+
+   def get_random_ingredients(kind=None):
+       print()
+       return ["shells", "gorgonzola", "parsley"]
+
+
+.. role:: python(code)
+   :language: python
+
+This in incline code :python:`print()`. 
+
+.. code-block:: python
+   :caption: lumache.py
+   :emphasize-lines: 2
+
+   def get_random_ingredients(kind=None):
+       print()
+       return ["shells", "gorgonzola", "parsley"]
 
 ## TODO:
 - Docker tagging
