@@ -75,13 +75,18 @@
     <script>
         try {
             var font_store = localStorage.getItem('uom-sphinx-font');
-
             if (font_store.startsWith('"') && font_store.endsWith('"')) {
                 localStorage.setItem('uom-sphinx-font', sidebar.slice(1, sidebar.length - 1));
             }
         } catch (e) { }
+        try {
+            var theme_store = localStorage.getItem('uom-sphinx-theme');
+            if (theme_store.startsWith('"') && theme_store.endsWith('"')) {
+                localStorage.setItem('uom-sphinx-theme', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
     </script>   
-    <!-- Set font before content loads to prevent a flash --> 
+    <!-- Set font/code theme before content loads to prevent a flash --> 
     <script>
         var html = document.querySelector('html');
         var body   = document.querySelector('body');
@@ -95,6 +100,19 @@
             html.classList.add('font-alt');
             body.classList.add('font-alt');
         }
+        try { theme = localStorage.getItem('uom-sphinx-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = "theme-light"; }
+        if (theme === "theme-dark") {
+                html.classList.remove('theme-light');
+                body.classList.remove('theme-light');
+                html.classList.add('theme-dark');
+                body.classList.add('theme-dark');
+            } else {
+                html.classList.remove('theme-dark');
+                body.classList.remove('theme-dark');
+                html.classList.add('theme-light');
+                body.classList.add('theme-light');
+            }
         </script>
     <header id="uom_header_title" class="container-fluid bg-primary">
         <a class="btn btn-sm btn-light skip-to-content-link" href="#main">{{ _('Skip to content') }}</a>

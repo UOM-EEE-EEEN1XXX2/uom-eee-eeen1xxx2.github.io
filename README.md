@@ -13,6 +13,12 @@ This work is licensed under a
 Sphinx theming used a modified version of the [sphinx-wagtail-theme]: https://github.com/wagtail/sphinx-wagtail-theme, which is released, modified, and included here under an MIT license.
 
 OpenDyslexic font is included from [OpenDyslexic]: https://opendyslexic.org/, which is released and included here under an SIL Open Font License v1.1.
+ADD MONO
+pygmentize -S default -f html -a .highlight > pygments.css
+pygmentize -S monokai -f html -a .highlight > pygments-theme-dark.css
+
+a11y-high-contrast-light
+a11y-high-contrast-dark
 
 ## TODO:
 - Docker tagging

@@ -41,3 +41,55 @@
         });
 
 })();
+
+
+
+
+(function themeUOM() {
+    var header = document.querySelector('header');
+    var body   = document.querySelector('body');
+    var themeToggleButton = document.getElementById('wagtail-theme');
+
+        function get_theme() {
+            var theme;
+            try { theme = localStorage.getItem('uom-sphinx-theme'); } catch (e) { }
+            if (theme === null || theme === undefined) { return theme = "theme-light"; }
+            else {return theme;}
+        }
+    
+        function set_theme(previousTheme, store = true) {
+    
+            if (previousTheme === "theme-light") {
+                theme = "theme-dark";
+            } else if (previousTheme === "theme-dark") {
+                theme = "theme-light";
+            } else 
+            {   // something has gone wrong! Set roboto as default theme
+                theme = "theme-light";
+            }
+
+            if (theme === "theme-dark") {
+                html.classList.remove('theme-light');
+                body.classList.remove('theme-light');
+                html.classList.add('theme-dark');
+                body.classList.add('theme-dark');
+            } else {
+                html.classList.remove('theme-dark');
+                body.classList.remove('theme-dark');
+                html.classList.add('theme-light');
+                body.classList.add('theme-light');
+            }
+
+            if (!store) { // seems to be the wrong way round! Not clear why this is
+                console.log(theme)
+                try { localStorage.setItem('uom-sphinx-theme', theme); } catch (e) { }
+            }
+            
+        }
+
+        themeToggleButton.addEventListener('click', function () {
+            var theme = get_theme();
+            set_theme(theme, false);       
+        });
+
+})();

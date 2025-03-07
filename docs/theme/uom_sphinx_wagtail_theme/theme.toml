@@ -3,6 +3,8 @@ inherit = "sphinx_wagtail_theme"
 stylesheets = [
     "dist/theme.css",
     "uom_custom.css",
+    "pygments-theme-light.css",
+    "pygments-theme-dark.css"
 ]
 sidebars = [
     "searchbox.html",

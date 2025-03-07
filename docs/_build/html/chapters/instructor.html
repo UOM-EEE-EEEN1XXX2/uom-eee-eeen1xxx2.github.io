@@ -10,7 +10,9 @@
     
     <link rel="stylesheet" type="text/css" href="../_static/dist/fontawesome.css" />
       <link rel="stylesheet" type="text/css" href="../_static/dist/theme.css?v=310cf088" />
-      <link rel="stylesheet" type="text/css" href="../_static/uom_custom.css?v=33f2004d" />
+      <link rel="stylesheet" type="text/css" href="../_static/uom_custom.css?v=a4ad0ad2" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments-theme-light.css?v=1a9d6a40" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments-theme-dark.css?v=def43bcb" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
             <link rel="index" title="Index" href="../genindex.html" />
             <link rel="search" title="Search" href="../search.html" />
@@ -23,13 +25,18 @@
     <script>
         try {
             var font_store = localStorage.getItem('uom-sphinx-font');
-
             if (font_store.startsWith('"') && font_store.endsWith('"')) {
                 localStorage.setItem('uom-sphinx-font', sidebar.slice(1, sidebar.length - 1));
             }
         } catch (e) { }
+        try {
+            var theme_store = localStorage.getItem('uom-sphinx-theme');
+            if (theme_store.startsWith('"') && theme_store.endsWith('"')) {
+                localStorage.setItem('uom-sphinx-theme', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
     </script>   
-    <!-- Set font before content loads to prevent a flash --> 
+    <!-- Set font/code theme before content loads to prevent a flash --> 
     <script>
         var html = document.querySelector('html');
         var body   = document.querySelector('body');
@@ -43,6 +50,19 @@
             html.classList.add('font-alt');
             body.classList.add('font-alt');
         }
+        try { theme = localStorage.getItem('uom-sphinx-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = "theme-light"; }
+        if (theme === "theme-dark") {
+                html.classList.remove('theme-light');
+                body.classList.remove('theme-light');
+                html.classList.add('theme-dark');
+                body.classList.add('theme-dark');
+            } else {
+                html.classList.remove('theme-dark');
+                body.classList.remove('theme-dark');
+                html.classList.add('theme-light');
+                body.classList.add('theme-light');
+            }
         </script>
     <header id="uom_header_title" class="container-fluid bg-primary">
         <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>

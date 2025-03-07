@@ -39,7 +39,6 @@ html_theme_options = dict(
 )
 html_show_copyright = True
 html_show_sphinx = False
-pygments_style = 'bw'
 
 
 # 404 settings - note this won't display correctly locally, but will on github
