@@ -3,10 +3,11 @@ Course aims
 This unit aims to provide students with an introduction to programming computer systems. It will provide an understanding of software development tools, and hands on experience of coding simple programs to build practical skills. This will give awareness of different types of programming approach (interpreted, procedural, and object orientated), and an introduction to coding for problem solving and creating algorithms. The unit focuses on the programming of desktop/laptop class devices, with some consideration of high performance computing (whether for high-spec computers, or embedded/single-board computer systems).
 
 
+.. _topics:
 
-Syllabus
---------
-The unit will cover the following:
+Topics
+------
+The unit will cover the following topics:
 
 0. Introduction and motivation (including considering factors such as sustainability, risk, security, and equality/diversity/inclusion in programming).
 1. Overview of major operating systems (e.g. Windows, macOS, Linux, Real-time Operating Systems (RTOS)).

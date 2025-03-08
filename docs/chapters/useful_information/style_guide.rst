@@ -4,13 +4,13 @@ In general, there are many ways in which you can format or layout your code, all
 
 Most  companies will have an internal style guide for how to structure and format code so that it looks consistent between different developers and is easy for different people to work on the same codebase. In large projects there may be many different people coding different parts of the program. 
 
-There are also automatic tools that you can use to check your code style against a standard, and to automatically convert code between different styles. 
+There are also automatic tools that you can use to check your code style against a standard, and to automatically convert code between different styles.We automatically turn one of these on to help with formatting your code.  
 
-We don't have a strictly enforced style guide,e do recommend picking your style and then sticking with it - it will help make your code more consistent, more readable, and easier to debug.
+Beyond this, we don't have a strictly enforced style guide. We do recommend picking your style and then sticking with it - it will help make your code more consistent, more readable, and easier to debug.
  
-For writing these notes, we will use conventions common in Python and in Rust. In particular:
+For writing these notes, we will use our own style, broadly following conventions common in Python and in Rust. In particular:
 
-- Filenames will be in snake case. That is, all lower case with underscores _ rather than spaces. Example: file_name.py. This is to help avoid cases like "file name.py" being accidently interpreted as two files, one called "file" and one called "name.c". (Nevertheless, our code should use delimiters to make the start and end of a filename to avoid this issue, because in general you can't guarantee what a filename will be.)
+- Filenames will be in snake case. That is, all lower case with underscores _ rather than spaces. Example: file_name.py. This is to help avoid cases like "file name.py" being accidentally interpreted as two files, one called "file" and one called "name.c". (Nevertheless, our code should use delimiters to make the start and end of a filename to avoid this issue, because in general you can't guarantee what a filename will be.)
 
 - Variables will be in snake case. Example: my_variable_name. Usually, but not always, programming is case sensitive, and so sticking with this helps ensure we don't have My_variable and my_variable, which are actually two different variables.
 

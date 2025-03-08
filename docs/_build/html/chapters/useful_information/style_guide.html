@@ -109,7 +109,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../index.html">0. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../course_administration.html">1. Course administration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../course_administration/ilos.html">1.1. Course aims</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../course_administration/ilos.html#syllabus">1.2. Syllabus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../course_administration/ilos.html#topics">1.2. Topics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../course_administration/ilos.html#intended-learning-outcomes">1.3. Intended learning outcomes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../course_administration/unit_delivery_plan.html">1.4. Unit delivery plan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../course_administration/learning_style.html">1.5. Learning style</a></li>
@@ -201,11 +201,11 @@
 <h1><span class="section-number">3.3. </span>Code style guide<a class="headerlink" href="#code-style-guide" title="Link to this heading">¶</a></h1>
 <p>In general, there are many ways in which you can format or layout your code, all of which will work. That said, how you layout your code can have a big impact on how easy it is to read and to debug.</p>
 <p>Most  companies will have an internal style guide for how to structure and format code so that it looks consistent between different developers and is easy for different people to work on the same codebase. In large projects there may be many different people coding different parts of the program.</p>
-<p>There are also automatic tools that you can use to check your code style against a standard, and to automatically convert code between different styles.</p>
-<p>We don’t have a strictly enforced style guide,e do recommend picking your style and then sticking with it - it will help make your code more consistent, more readable, and easier to debug.</p>
-<p>For writing these notes, we will use conventions common in Python and in Rust. In particular:</p>
+<p>There are also automatic tools that you can use to check your code style against a standard, and to automatically convert code between different styles.We automatically turn one of these on to help with formatting your code.</p>
+<p>Beyond this, we don’t have a strictly enforced style guide. We do recommend picking your style and then sticking with it - it will help make your code more consistent, more readable, and easier to debug.</p>
+<p>For writing these notes, we will use our own style, broadly following conventions common in Python and in Rust. In particular:</p>
 <ul class="simple">
-<li><p>Filenames will be in snake case. That is, all lower case with underscores _ rather than spaces. Example: file_name.py. This is to help avoid cases like “file name.py” being accidently interpreted as two files, one called “file” and one called “name.c”. (Nevertheless, our code should use delimiters to make the start and end of a filename to avoid this issue, because in general you can’t guarantee what a filename will be.)</p></li>
+<li><p>Filenames will be in snake case. That is, all lower case with underscores _ rather than spaces. Example: file_name.py. This is to help avoid cases like “file name.py” being accidentally interpreted as two files, one called “file” and one called “name.c”. (Nevertheless, our code should use delimiters to make the start and end of a filename to avoid this issue, because in general you can’t guarantee what a filename will be.)</p></li>
 <li><p>Variables will be in snake case. Example: my_variable_name. Usually, but not always, programming is case sensitive, and so sticking with this helps ensure we don’t have My_variable and my_variable, which are actually two different variables.</p></li>
 <li><p>Constants will be in capitals. Example: MY_CONSTANT.</p></li>
 <li><p>We won’t use camel case. (Example: MyVariableName.)</p></li>
