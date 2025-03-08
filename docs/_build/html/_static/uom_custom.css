@@ -80,7 +80,7 @@ body.font-alt .alt-only{
 }
 
 
-.font-alt .pre { line-height: 175%; }
+.font-alt pre { line-height: 175%; }
 
 .font-alt pre{
   font-family: var(--uom-font-alt-mono);
