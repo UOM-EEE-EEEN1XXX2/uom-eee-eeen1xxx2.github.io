@@ -1,0 +1,58 @@
+.. _computer_cluster:
+
+Using a cluster computer on the University campus
+-------------------------------------------------
+
+Advantages and disadvantages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Advantages:
+
+- The tools are installed and set up for you. They should be ready to use with little set up required.
+
+Disadvantages:
+
+- You can only use the tools while on the University campus and working at a University PC. 
+- There are some specific steps to follow to start the tools correctly.
+- Some settings don't move from computer to computer and have to be re-done each time you log in to a different computer. 
+
+
+Process
+~~~~~~~
+VSCode and the required tools should be installed on all University cluster computers. 
+Log in, and start VSCode from the start menu.
+
+
+Important note 1
+~~~~~~~~~~~~~~~~ 
+On a University computer you must start VSCode via the Start menu. This runs some customisations when VSCode starts in order to get things to work correctly. If you double click on a file to open it, and this launches VSCode for you, the University customisations may not have run and VSCode may not work correctly. On a University computer, you need to use the Start menu every time you start VSCode.
+
+
+Important note 2
+~~~~~~~~~~~~~~~~ 
+When VSCode starts, or possibly when you add a folder/file for the first time, you may get a warning message like the below. There are two variants, and you may get one or both: 
+
+(The location given, nask.man.ac.uk or C:\ will vary depending on where your files are located.) These are security warnings. By default, VSCode doesn't trust the University fileservers. Programming in C allows to you write arbitrary code. That is, you can ask the computer to do anything (within reason, and the permissions you have). You, and VSCode, thus need to be very careful about which files and folders are trusted and allowed to run code, as malicious files/folders may contain viruses or similar. Files on P:\, or nask.man.ac.uk, or on the University of Manchester provided Onedrive should be OK to trust, but always use suitable due diligence and think about which locations you are trusting. 
+
+Select "Yes" and/or "Yes, I trust the authors".
+
+
+Important note 3 
+~~~~~~~~~~~~~~~~
+In Step 2 below you are asked to open the folder where your code is kept, or is to be kept. You must select this folder via "This PC" and then the P drive, as shown in the figure below. Inside the P drive, you can put your code files wherever you would like. (On a University computer, don't store your files on the C drive, or elsewhere.) On a University computer, for technical reasons, VSCode won't work if you select the P drive via a different route. This includes, for example, selecting "Documents" in the figure below. This icon is actually a shortcut to the Documents folder on your P drive, but the setup doesn't detect this. Remember that your P drive is a network drive, and so is automatically backed up and will be available on all University computers when you log in. You can access your P drive outside of the University at https://pdrives.manchester.ac.uk/horde/login.php. 
+
+
+Important note 4 
+~~~~~~~~~~~~~~~~
+If all of the above steps have been done correctly, the terminal in VSCode should read: 
+
+PS P:\Desktop\lab_a> 
+
+(Assuming this is where you chose to put your files.) PS shows that this is a PowerShell terminal. P:\ shows that VSCode is correctly storing files on the P drive. 
+
+
+
+
+Important note 5
+~~~~~~~~~~~~~~~~ 
+When the University computers are in exam mode, your P drive isn't available. (To prevent you from accessing files.) There is instead an S drive where you save things temporarily. All the above comments still apply, just during an exam S:\ should be used instead of P:\.
